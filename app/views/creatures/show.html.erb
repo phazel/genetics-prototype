@@ -8,5 +8,9 @@
   <%= @creature.shape %>
 </p>
 
-<%= link_to 'Edit', edit_creature_path(@creature) %> |
-<%= link_to 'Back', creatures_path %>
+<div class="<%= @creature.shape %>"></div>
+
+<p>
+  <%= link_to 'Edit', edit_creature_path(@creature) %> |
+  <%= link_to 'Back', creatures_path %>
+</p>

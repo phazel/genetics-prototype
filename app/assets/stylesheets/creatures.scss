@@ -1,3 +1,18 @@
 // Place all the styles related to the Creatures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
