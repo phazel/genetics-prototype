@@ -15,6 +15,16 @@ class CreaturesController < ApplicationController
     @creature = Creature.find(params[:id])
   end
 
+  def clone
+    @existing_creature = Creature.find(params[:id])
+
+    @creature = Creature.new({
+      shape: @existing_creature.shape
+    })
+    @creature.save
+    render 'new'
+  end
+
   def create
     @creature = Creature.new(creature_params)
 

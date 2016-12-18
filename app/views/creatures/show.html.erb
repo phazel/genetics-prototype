@@ -11,6 +11,7 @@
 <div class="<%= @creature.shape %>"></div>
 
 <p>
+  <%= link_to 'Clone', clone_creature_path(@creature), method: :post %> |
   <%= link_to 'Edit', edit_creature_path(@creature) %> |
   <%= link_to 'Back', creatures_path %>
 </p>
