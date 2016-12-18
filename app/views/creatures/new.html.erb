@@ -1,6 +1,6 @@
 <h1>New Creature</h1>
 
-<%= form_for :creature, url: creatures_path do |c| %>
+<%= form_for :creature, url: creatures_path do |f| %>
   <% if @creature.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -16,17 +16,17 @@
   <% end %>
 
   <p>
-    <%= c.label :name %><br>
-    <%= c.text_field :name %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </p>
 
   <p>
-    <%= c.label :text %><br>
-    <%= c.text_area :text %>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
   </p>
 
   <p>
-    <%= c.submit %>
+    <%= f.submit %>
   </p>
 <% end %>
 

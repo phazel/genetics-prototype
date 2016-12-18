@@ -8,7 +8,7 @@ class CreaturesController < ApplicationController
   end
 
   def new
-    @article = Creature.new
+    @creature = Creature.new
   end
 
   def create
