@@ -8,13 +8,17 @@ class CreaturesController < ApplicationController
   end
 
   def new
+    @article = Creature.new
   end
 
   def create
     @creature = Creature.new(creature_params)
 
-    @creature.save
-    redirect_to @creature
+    if @creature.save
+      redirect_to @creature
+    else
+      render 'new'
+    end
   end
 
   private
