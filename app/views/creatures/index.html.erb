@@ -11,6 +11,7 @@
       <td><%= creature.name %></td>
       <td><%= creature.text %></td>
       <td><%= link_to 'Show', creature_path(creature) %></td>
+      <td><%= link_to 'Edit', edit_creature_path(creature) %></td>
     </tr>
   <% end %>
 </table>
