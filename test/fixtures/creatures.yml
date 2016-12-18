@@ -2,8 +2,6 @@
 
 one:
   name: MyString
-  text: MyText
 
 two:
   name: MyString
-  text: MyText
