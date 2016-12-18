@@ -1,0 +1,16 @@
+<h1>All Creatures</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Text</th>
+  </tr>
+
+  <% @creatures.each do |creature| %>
+    <tr>
+      <td><%= creature.name %></td>
+      <td><%= creature.text %></td>
+      <td><%= link_to 'Show', creature_path(creature) %></td>
+    </tr>
+  <% end %>
+</table>
