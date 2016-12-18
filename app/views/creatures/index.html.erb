@@ -12,6 +12,9 @@
       <td><%= creature.text %></td>
       <td><%= link_to 'Show', creature_path(creature) %></td>
       <td><%= link_to 'Edit', edit_creature_path(creature) %></td>
+      <td><%= link_to 'Destroy', creature_path(creature),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
