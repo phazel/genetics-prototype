@@ -9,5 +9,7 @@ class Creature < ApplicationRecord
     else
       self.shape ||= 'circle'
     end
+
+    self.name ||= self.id
   end
 end
